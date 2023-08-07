@@ -1,16 +1,17 @@
 // import React from 'react'
-import Description from "./components/Description"
 import Navbar from "./components/Navbar"
-import "./stylesApp.css"
+import FirstSection from "./components/FirstSection"
+import "./styles.css"
+import SecondSection from "./components/SecondSection"
 
-const MiComponente = () => {
+const App = () => {
   return (
-    <div>
+    <div className="bg-slate-100">
       <Navbar/>
-      <h1>Este es mi componente</h1>
-      <Description/>
+      <FirstSection/>
+      <SecondSection/>
     </div>
   )
 }
 
-export default MiComponente
+export default App
