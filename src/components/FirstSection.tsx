@@ -19,7 +19,7 @@ const FirstSection = () => {
                 </div>
             </section>
             {/*Segundo section con un poco más de información de la empresa*/}
-            <section className="flex justify-evenly w-3/4 mx-auto px-2 py-7 rounded-md shadow-2xl bg-slate-50 text-lg">
+            <section className="flex justify-evenly w-3/4 mx-auto px-1 py-5 rounded-md shadow-2xl bg-slate-50 text-lg">
                 {/* Primer Elemento */}
                 <div className="flex items-center space-x-2 ">
                     <svg xmlns="http://www.w3.org/2000/svg" className="fill-red-700 w-14 h-14 bg-red-100 p-4 rounded-full" viewBox="0 0 24 24">
