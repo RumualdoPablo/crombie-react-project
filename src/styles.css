@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     font-family: "rubik";
+}
+
+.btn{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover{
+    color: #f1f5f9;
+    background-color: #ef4444;
+}
+
+.brand-hover{
+    transition: 0.5s;
+}
+
+.brand-hover:hover{
+    opacity: 100%;
+}
+
+
+textarea{
+    resize: none;
 }

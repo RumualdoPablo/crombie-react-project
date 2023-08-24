@@ -5,6 +5,10 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "types": [
+      "react-slick",
+      "slick-carousel"
+    ],
 
     /* Bundler mode */
     "moduleResolution": "bundler",

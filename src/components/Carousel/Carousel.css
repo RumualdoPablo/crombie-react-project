@@ -1,0 +1,37 @@
+/* src/components/Carousel.css */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 15px auto;
+    overflow: hidden;
+    /* Para ocultar los elementos fuera del carrusel visible */
+}
+
+.carousel-button {
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.carousel-button:hover{
+    color: #f1f5f9;
+    background-color: #ef4444;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-review {
+    flex: 0 0 32%;
+    /* Cada testimonio ocupará un tercio del ancho del carrusel */
+    padding: 20px;
+    /* Mostrar siempre todos los testimonios */
+    transition: opacity 0.3s ease-in-out;
+    margin: 0 10px;
+    /* Espacio entre testimonios */
+}

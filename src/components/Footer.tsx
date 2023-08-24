@@ -1,4 +1,5 @@
 import React from 'react'
+import FooterForm from './FooterForm/FooterForm';
 
 const Footer = () => {
 
@@ -12,20 +13,20 @@ const Footer = () => {
         "Earn money": ['Affiliate', 'Become partner']
     };
 
-    return (
-        <section className=' bg-gray-200'>
+    const socialLinks: string[] = [
+        "src/assets/img/logo-imgs/logo-facebook.svg",
+        "src/assets/img/logo-imgs/logo-twitter.svg",
+        "src/assets/img/logo-imgs/logo-instagram.svg"
+    ]
 
-            <div className='relative mb-20 flex justify-between w-3/4 mx-auto py-12 bg-white rounded-xl shadow-xl'>
-                <div className=' w-1/4 ml-28'>
-                    <h3 className='text-4xl font-semibold leading-snug mb-4'>Subscribe Now to get Special features</h3>
-                    <p>Let's subscribe with us and find the fun</p>
-                </div>
-                <div className='flex flex-col justify-center'>
-                    <button className="py-4 px-16 mr-12 text-slate-50 bg-red-500 shadow-2xl shadow-red-300 rounded-lg  font-bold">Subscribe now!</button>
-                </div>
+    return (
+        <section className='relative bg-gray-200'>
+
+            <div className='absoute -top-8'>
+                <FooterForm />
             </div>
 
-            <div className='flex justify-between  pt-28'>
+            <div className='flex justify-between pt-28 ml-3 pb-28'>
                 <div className='space-y-8'>
                     <div className="flex space-x-2 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" viewBox="0 0 17 18" fill="none">
@@ -34,12 +35,15 @@ const Footer = () => {
                         <h1 className="text-slate-900 text-lg font-bold">Lasles<b>VPN</b></h1>
                     </div>
                     <p className='w-3/4'>LaslesVPN is a private virtual network that has unique features and has high security.</p>
-                    <ul className='flex space-x-3'>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
+                    <ul className='flex space-x-4'>
+                        {socialLinks.map((social) => {
+                            return (
+                                <li><img src={social} className='rounded-full bg-white p-2 shadow-md cursor-pointer' /></li>
+                            )
+                        })
+                        }
                     </ul>
-                    <p className='mt-10'>©2020LaslesVPN</p>
+                    <p className='mt-10 opacity-60'>©2020LaslesVPN</p>
                 </div>
 
                 <div className="grid grid-cols-3 gap-36 mr-64">
@@ -48,7 +52,7 @@ const Footer = () => {
                             <h3 className="text-lg font-semibold">{section}</h3>
                             <ul className="list-none">
                                 {footerSections[section].map((item: string, itemIndex: number) => (
-                                    <li className=" mt-2" key={itemIndex}>{item}</li>
+                                    <li className="mt-2 cursor-pointer" key={itemIndex}>{item}</li>
                                 ))}
                             </ul>
                         </div>
