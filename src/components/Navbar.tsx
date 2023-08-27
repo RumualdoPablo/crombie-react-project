@@ -3,7 +3,7 @@ import Logo from "../Logo";
 
 const DesktopNavbar = () => {
     return (
-        <nav className="hidden md:p-4 md:flex md:justify-between">
+        <nav className="hidden lg:p-4 lg:flex lg:justify-between">
             <Logo />
             <div className=" flex justify-center">
                 <ul className="flex mx-auto space-x-4 items-center font-sans text-lg font-normal">
@@ -30,7 +30,7 @@ const MobileNav = () => {
     };
 
     return (
-        <div className="md:hidden">
+        <div className="lg:hidden">
             <div className="relative flex justify-between">
                 <Logo />
                 <button
@@ -42,7 +42,7 @@ const MobileNav = () => {
             </div>
 
             {isOpen && (
-                <div className="absolute top-10 right-0 bg-white w-40 shadow-md text-center">
+                <div className="absolute top-10 right-0 bg-white w-40 shadow-md rounded-lg text-center">
                     <ul className="text-lg font-normal space-y-6 py-4">
                         <li>About</li>
                         <li>Features</li>

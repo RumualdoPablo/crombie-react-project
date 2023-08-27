@@ -19,7 +19,7 @@ const App = () => {
       <Navbar />
       <FirstSection />
       <SecondSection />
-      <div className="flex flex-col justify-center sm:flex-row">
+      <div className="flex flex-col justify-center lg:flex-row">
         <PlanCards />
       </div>
       <MapSection />

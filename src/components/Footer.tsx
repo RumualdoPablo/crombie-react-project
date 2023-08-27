@@ -26,7 +26,7 @@ const Footer = () => {
                 <FooterForm />
             </div>
 
-            <div className='flex justify-between pt-28 ml-3 pb-28'>
+            <div className='flex flex-col md:justify-between pt-28 ml-3 pb-2 md:pb-8 lg:pb-12 lg:flex-row'>
                 <div className='space-y-8'>
                     <div className="flex space-x-2 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" viewBox="0 0 17 18" fill="none">
@@ -43,12 +43,12 @@ const Footer = () => {
                         })
                         }
                     </ul>
-                    <p className='mt-10 opacity-60'>©2020LaslesVPN</p>
+                    <p className='hidden md:flex mt-10 opacity-60'>©2020LaslesVPN</p>
                 </div>
 
-                <div className="grid grid-cols-3 gap-36 mr-64">
+                <div className="grid grid-cols-2 md:grid-cols-3 mt-5 md:gap-36 lg:mr-20 md:mx-auto lg:gap-24">
                     {Object.keys(footerSections).map((section, index) => (
-                        <div key={index}>
+                        <div key={index} className="space-y-2">
                             <h3 className="text-lg font-semibold">{section}</h3>
                             <ul className="list-none">
                                 {footerSections[section].map((item: string, itemIndex: number) => (
@@ -58,6 +58,7 @@ const Footer = () => {
                         </div>
                     ))}
                 </div>
+                <p className='md:hidden mt-10 opacity-60'>©2020LaslesVPN</p>
             </div>
         </section>
     )

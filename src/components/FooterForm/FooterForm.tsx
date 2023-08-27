@@ -42,47 +42,48 @@ const FooterForm: React.FC = () => {
         reset()
     };
 
-    return (<>
+    return (
+        <div className="flex flex-col bg-white rounded-xl shadow-xl w-3/4 mx-auto py-12 lg:flex-row">
 
-        <div className='relative mb-20 flex justify-between w-3/4 mx-auto py-12 bg-white rounded-xl shadow-xl'>
-            <div className=' w-1/4 ml-28'>
-                <h3 className='text-4xl font-semibold leading-snug mb-4'>Subscribe Now to get Special features</h3>
-                <p>Let's subscribe with us and find the fun</p>
+            <div className='mb-8 px-2 lg:w-1/4 lg:ml-10'>
+                <h3 className='text-3xl font-semibold text-center lg:text-justify md:px-2 md:leading-snug mb-4'>Subscribe Now to get Special features</h3>
+                <p className="text- lg:text-justify">Let's subscribe with us and find the fun</p>
             </div>
-            
-                <form onSubmit={handleSubmit(handleFetch)} className='flex flex-col m-5 space-y-6'>
-                    <input
-                        type="text"
-                        id="fullName"
-                        placeholder='Nombre'
-                        className='bg-slate-50 border-2 rounded-lg p-2'
-                        {...register("fullName")}
-                    />
-                    <input
-                        type="number"
-                        id="phone"
-                        placeholder='Phone number'
-                        className='bg-slate-50 border-2 rounded-lg p-2'
-                        {...register("phone")}
-                    />
-                    <input
-                        type="text"
-                        id="email"
-                        placeholder='E-mail'
-                        className='bg-slate-50 border-2 rounded-lg p-2'
-                        {...register("email")}
-                    />
-                    <textarea
-                        id="message"
-                        placeholder='Leave us your message!'
-                        className='bg-slate-50 border-2 rounded-lg p-2 h-40'
-                        {...register("message")}
-                    />
-                    <p>{errors.message?.message}</p>
-                    <button type="submit" className="py-4 px-16 m-4 text-slate-50 bg-red-500 shadow-2xl shadow-red-300 rounded-lg  font-bold">Subscribe now!</button>
-                </form>
-            </div>
-    </>
+
+            <form onSubmit={handleSubmit(handleFetch)} className='flex flex-col m-5 space-y-6 md:w-3/4 md:mx-auto lg:w-2/5'>
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder='Nombre'
+                    className='bg-slate-50 border-2 rounded-lg p-2'
+                    {...register("fullName")}
+                />
+                <input
+                    type="number"
+                    id="phone"
+                    placeholder='Phone number'
+                    className='bg-slate-50 border-2 rounded-lg p-2'
+                    {...register("phone")}
+                />
+                <input
+                    type="text"
+                    id="email"
+                    placeholder='E-mail'
+                    className='bg-slate-50 border-2 rounded-lg p-2'
+                    {...register("email")}
+                />
+                <textarea
+                    id="message"
+                    placeholder='Leave us your message!'
+                    className='bg-slate-50 border-2 rounded-lg p-2 h-40'
+                    {...register("message")}
+                />
+                <p>{errors.message?.message}</p>
+                <button type="submit" className="px-5 py-3 md:py-4 md:px-16 m-4 text-slate-50 bg-red-500 shadow-2xl shadow-red-300 rounded-lg  font-bold">Subscribe now!</button>
+            </form>
+
+        </div>
+
     );
 };
 

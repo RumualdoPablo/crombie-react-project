@@ -38,7 +38,7 @@ const Carousel: React.FC = () => {
                     }
                 </div>
             </div>
-            <div className='flex justify-end space-x-5 mt-16 mr-48'>
+            <div className='flex justify-center md:justify-end space-x-5 mt-16 mr-48'>
                 <button className="carousel-button border-red-500 border-2 rounded-full text-red-500 p-3 py-0" onClick={prevSlide}>
                     &lt;
                 </button>
