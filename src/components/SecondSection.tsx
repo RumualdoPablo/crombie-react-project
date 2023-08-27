@@ -10,7 +10,7 @@ const SecondSection = () => {
         </div>
 
         <div className="h-1/2 flex flex-col justify-center">
-          <h3 className="text-center lg:text-justify mx-auto w-3/5 text-4xl font-semibold leading-snug mb-5">We provide many features you can use</h3>
+          <h3 className="text-center lg:text-left mx-auto w-3/5 text-4xl font-semibold leading-snug mb-5">We provide many features you can use</h3>
           <p className="mx-auto text-center lg:text-justify w-1/2 md:w-3/4 mb-2">You can explore the features that we provide with fun and have their own functions each feature.</p>
           <ul className="mx-auto w-1/2 md:ml-60 lg:ml-auto">
             <li className="mt-5">
