@@ -1,5 +1,3 @@
-import React from 'react'
-
 const MapSection = () => {
 
     const brandImg = ["src/assets/img/logo-imgs/logo-netflix.png", "src/assets/img/logo-imgs/logo-reddit.png", "src/assets/img/logo-imgs/logo-amazon.png", "src/assets/img/logo-imgs/logo-discord.png", "src/assets/img/logo-imgs/logo-spotify.png"]

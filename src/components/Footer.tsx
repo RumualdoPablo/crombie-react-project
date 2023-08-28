@@ -1,4 +1,3 @@
-import React from 'react'
 import FooterForm from './FooterForm/FooterForm';
 
 const Footer = () => {
