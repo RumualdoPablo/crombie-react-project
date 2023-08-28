@@ -1,3 +1,3 @@
 [build]
-command = "tsc && vite build"
+command = "npm run build"
 publish = "https://github.com/RumualdoPablo/crombie-react-project"  # Cambia esto a la ruta correcta
