@@ -1,6 +1,6 @@
 const MapSection = () => {
 
-    const brandImg = ["public/img/logo-imgs/logo-netflix.png", "public/img/logo-imgs/logo-reddit.png", "public/img/logo-imgs/logo-amazon.png", "public/img/logo-imgs/logo-discord.png", "public/img/logo-imgs/logo-spotify.png"]
+    const brandImg = ["/img/logo-imgs/logo-netflix.png", "/img/logo-imgs/logo-reddit.png", "/img/logo-imgs/logo-amazon.png", "/img/logo-imgs/logo-discord.png", "/img/logo-imgs/logo-spotify.png"]
 
     return (
         <section className='h-screen mt-10 px-4 lg:h-fit lg:mb-40'>
@@ -9,7 +9,7 @@ const MapSection = () => {
                 <p className="text-center">See <span className='font-bold'>LaslesVPN</span> everywhere to make it easier for you when you move locations.</p>
             </div>
             <div className='mx-auto md:w-3/5 mt-10'>
-                <img src="public\img\img-map.svg" alt="img-map" className='w-full mb-10' />
+                <img src="/img/img-map.svg" alt="img-map" className='w-full mb-10' />
             </div>
             <div className='flex flex-col space-y-6  mt-12 items-center w-9/12 mx-auto lg:w-3/5 lg:flex-row lg:space-x-16 lg:space-y-0'>
                 {brandImg.map((brand) => (

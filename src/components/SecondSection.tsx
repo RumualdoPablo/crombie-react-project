@@ -6,7 +6,7 @@ const SecondSection = () => {
     <>
       <section className="flex h-3/4 justify-center mt-20">
         <div className="hidden lg:flex h-1/2 justify-center">
-          <img src="public\img\img-dos.png" alt="img-dos" className="ml-40 h-full" />
+          <img src="/img/img-dos.png" alt="img-dos" className="ml-40 h-full" />
         </div>
 
         <div className="h-1/2 flex flex-col justify-center">
