@@ -13,7 +13,7 @@ const MapSection = () => {
             <div className='mx-auto md:w-3/5 mt-10'>
                 <img src="src\assets\img\img-map.svg" alt="img-map" className='w-full mb-10' />
             </div>
-            <div className='flex flex-col space-y-6  mt-12 items-center w-9/12 mx-auto lg:w-3/5 lg:flex-row lg:space-x-7 lg:space-y-0'>
+            <div className='flex flex-col space-y-6  mt-12 items-center w-9/12 mx-auto lg:w-3/5 lg:flex-row lg:space-x-16 lg:space-y-0'>
                 {brandImg.map((brand) => (
                     <img src={brand} alt="" className='w-44 opacity-10 brand-hover' />
                 ))}
