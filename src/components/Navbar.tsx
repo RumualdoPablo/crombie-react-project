@@ -37,7 +37,7 @@ const MobileNav = () => {
                     onClick={toggleMenu}
                     className=" p-2 focus:outline-none"
                 >
-                    <img src="src\assets\img\menu.png" className="w-8"/>
+                    <img src="public\img\menu.png" className="w-8"/>
                 </button>
             </div>
 

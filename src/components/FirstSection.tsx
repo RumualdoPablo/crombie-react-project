@@ -17,7 +17,7 @@ const FirstSection = () => {
                     </div>
                 </div>
                 <div className="hidden lg:flex lg:pt-8">
-                    <img src="src\assets\img\img-principal.png" alt="" className="w-full" />
+                    <img src="public\img\img-principal.png" alt="" className="w-full" />
                 </div>
             </section>
 

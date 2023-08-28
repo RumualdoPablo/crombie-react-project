@@ -13,9 +13,9 @@ const Footer = () => {
     };
 
     const socialLinks: string[] = [
-        "src/assets/img/logo-imgs/logo-facebook.svg",
-        "src/assets/img/logo-imgs/logo-twitter.svg",
-        "src/assets/img/logo-imgs/logo-instagram.svg"
+        "public/img/logo-imgs/logo-facebook.svg",
+        "public/img/logo-imgs/logo-twitter.svg",
+        "public/img/logo-imgs/logo-instagram.svg"
     ]
 
     return (

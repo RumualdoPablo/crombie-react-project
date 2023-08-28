@@ -13,7 +13,7 @@ const PlanCards = () => {
                 {subscriptions.map((subscription) => (
                     <section className="flex flex-col items-center mx-16 lg:mx-auto my-8 p-14 border-2 border-slate-300 rounded-lg">
                         <div className="">
-                            <img src="src\assets\img\img-card.png" alt="img-card" className="h-52 lg:h-36" />
+                            <img src="public\img\img-card.png" alt="img-card" className="h-52 lg:h-36" />
                         </div>
                         <h3 className="font-semibold mb-4">{subscription.title}</h3>
                         <div className="md:h-36 lg:h-72 lg:mt-5">
