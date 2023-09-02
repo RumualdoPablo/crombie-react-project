@@ -1,8 +1,22 @@
-import PlanCardsHook from "./PlanCardsHook";
+// import PlanCardsHook from "../hooks/PlanCardsHook";
+import useGetData from "../hooks/UseGetData";
+
+type Subscription = {
+    title:string;
+    price: number | "Free";
+    benefits: string[];
+    currency: "U$S" | "$ARG";
+    type: "monthly" | "daily" | "weekly";
+}
 
 
 const PlanCards = () => {
-    const subscriptions = PlanCardsHook();
+    // const subscriptions = PlanCardsHook();
+    const {
+        result: subscriptions,
+        error,
+        loading
+    } = useGetData<Subscription[]>({endpoint:"subscription"})
 
     return (
         <section className="mt-32 flex flex-col items-center mb-20">
@@ -10,13 +24,13 @@ const PlanCards = () => {
             <p className="w-1/2 text-center">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
 
             <div className="lg:flex lg:flex-row lg:space-x-4 lg:ml-6">
-                {subscriptions.map((subscription) => (
+                {subscriptions?.map((subscription) => (
                     <section className="flex flex-col items-center mx-16 lg:mx-auto my-8 p-14 border-2 border-slate-300 rounded-lg">
                         <div className="">
                             <img src="/img/img-card.png" alt="img-card" className="h-52 lg:h-36" />
                         </div>
                         <h3 className="font-semibold mb-4">{subscription.title}</h3>
-                        <div className="md:h-36 lg:h-72 lg:mt-5">
+                        <div className="md:h-52 lg:h-72 lg:mt-5">
                             <ul className="space-y-4">
                                 {subscription.benefits.map((benefit) => (
                                     <li className="">

@@ -1,12 +1,21 @@
-// src/components/Carousel.tsx
 import React, { useState } from 'react';
-import TestimonialsHook from './TestimonialsHook';
 import './Carousel.css';
+import useGetData from '../hooks/UseGetData';
+
+type Testimonial = {
+    avatar: string;
+    fullName: string;
+    testimonial: string;
+}
 
 const Carousel: React.FC = () => {
-
+    // const testimonials = TestimonialsHook();
     const [currentIndex, setCurrentIndex] = useState(0);
-    const testimonials = TestimonialsHook();
+    const {
+        result: testimonials,
+        error,
+        loading,
+    } = useGetData<Testimoial[]>({endpoint:"testimonial"})
 
     const prevSlide = () => {
         setCurrentIndex((prevIndex) =>
@@ -26,7 +35,7 @@ const Carousel: React.FC = () => {
             <div className="carousel">
                 <div className="carousel-content" style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}>
                     {
-                        testimonials.map((testimonial) => (
+                        testimonials?.map((testimonial) => (
                             <div key={testimonial.fullName} className="carousel-review border-2 rounded-lg">
                                 <div className='flex space-x-2 items-center mb-4'>
                                     <img src={testimonial.avatar} alt={`${testimonial.fullName}'s avatar`} className="w-14 h-12 rounded-full" />

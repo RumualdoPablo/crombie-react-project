@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BASE_URL } from "../../App";
+import { BASE_URL } from "../../../App";
 
 type Suscription = {
     title: string;
